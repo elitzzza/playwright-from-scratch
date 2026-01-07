@@ -23,17 +23,17 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '16'
           distribution: 'adopt'
 
-      # Step 3: Install Maven 3.9.9
+      # Step 3: Install Maven 3.8.1
       - name: Setup Maven Action
         uses: s4u/setup-maven-action@v1.7.0
         with:
           checkout-fetch-depth: 0
-          java-version: 17
+          java-version: 16
           java-distribution: temurin
-          maven-version: 3.9.9
+          maven-version:  3.8.1
 
       # Step 4: Install playwright OS libraries
       - name: Install Playwright dependencies

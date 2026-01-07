@@ -39,7 +39,7 @@ Feature: Product catalogue
         | Wood Saw | $12.18 |
 
   Rule: Customers should be able to sort the items by various criteria
-    Scenario Outline: : Sally sorts by different criteria
+    Scenario Outline: Sally sorts by different criteria
       Given Sally is on the home page
       When she sorts by "<Sorting Criterion>"
       Then the first displayed product should be "<First Product>"
